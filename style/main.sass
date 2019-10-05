@@ -40,15 +40,19 @@ body
     width: 100%
 
 #banner1
+  padding: $small
   background: $accent2
   // min-height: $verybig
   display: flex
   justify-content: space-between
   align-items: center
 
-.navlist
+.navlist-top
+  font-size: $medium
+  font-weight: bold
   margin: 0
   padding: 0
+  padding-left: $small
   background: $accent1
   li
     display: inline-block
@@ -56,6 +60,11 @@ body
   a
     text-decoration: none
     color: white
+
+.navlist-bot
+  @extend .navlist-top
+  background: black
+  font-size: $small
 
 #vbox
   display: flex
@@ -73,6 +82,7 @@ main
   width: 100%
   left: 0
   h1
+    margin-left: $small
     color: white
     font-size: $big
     text-transform: capitalize
@@ -127,7 +137,8 @@ main
     width: 12em
     text-align: center
     text-align-last: center
-    border: 0
+    border: 1px solid green
+    border-radius: 2px
     // height: 50%
 
 @media (min-width: 500px)
@@ -160,7 +171,7 @@ button:hover
 
 #calculator-result
   font-variant: small-caps
-  box-shadow: 0 0 2px 2px $shade0
+  box-shadow: 0 2px 2px 2px $shade0
   border-top: 2px solid black
   min-height: 2 * $big
   color: green
@@ -180,7 +191,7 @@ button:hover
 
 #banner2
   flex: 1
-  background: $shade
+  background: linear-gradient(transparent,$shade 50%)
   font-size: 3.3vmin
   display: flex
   justify-content: center
@@ -199,5 +210,5 @@ button:hover
   .item
     flex: 1
     margin: 10vh 5vw
-    box-shadow: 0 0 2px 2px $shade0
+    box-shadow: 0 2px 2px 2px $shade0
     border-top: 2px solid black

@@ -21,21 +21,29 @@ body {
     width: 100%; }
 
 #banner1 {
+  padding: 1rem;
   background: #fff3f3;
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-.navlist {
+.navlist-top, .navlist-bot {
+  font-size: 1.3rem;
+  font-weight: bold;
   margin: 0;
   padding: 0;
+  padding-left: 1rem;
   background: #8e1616; }
-  .navlist li {
+  .navlist-top li, .navlist-bot li {
     display: inline-block;
     margin-right: 2rem; }
-  .navlist a {
+  .navlist-top a, .navlist-bot a {
     text-decoration: none;
     color: white; }
+
+.navlist-bot {
+  background: black;
+  font-size: 1rem; }
 
 #vbox {
   display: flex;
@@ -53,6 +61,7 @@ main {
   width: 100%;
   left: 0; }
   #title h1 {
+    margin-left: 1rem;
     color: white;
     font-size: 2rem;
     text-transform: capitalize; }
@@ -98,7 +107,8 @@ main {
     width: 12em;
     text-align: center;
     text-align-last: center;
-    border: 0; }
+    border: 1px solid green;
+    border-radius: 2px; }
 
 @media (min-width: 500px) {
   #inputform .item {
@@ -126,7 +136,7 @@ button:hover {
 
 #calculator-result {
   font-variant: small-caps;
-  box-shadow: 0 0 2px 2px #7b7b7b;
+  box-shadow: 0 2px 2px 2px #7b7b7b;
   border-top: 2px solid black;
   min-height: 4rem;
   color: green;
@@ -145,7 +155,7 @@ button:hover {
 
 #banner2 {
   flex: 1;
-  background: #cecece;
+  background: linear-gradient(transparent, #cecece 50%);
   font-size: 3.3vmin;
   display: flex;
   justify-content: center;
@@ -162,5 +172,5 @@ button:hover {
   #productplans .item {
     flex: 1;
     margin: 10vh 5vw;
-    box-shadow: 0 0 2px 2px #7b7b7b;
+    box-shadow: 0 2px 2px 2px #7b7b7b;
     border-top: 2px solid black; }
