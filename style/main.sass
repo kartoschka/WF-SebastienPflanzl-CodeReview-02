@@ -17,6 +17,7 @@ $shade:   #cecece
 $shade0:  #7b7b7b
 $floaty-alpha: cc //set floaty opacity
 
+$font: 'Open Sans Condensed', sans-serif
 $verybig: 5rem
 $big: 2rem
 $kinda-big: 1.5rem
@@ -29,7 +30,7 @@ body
   display: flex
   flex-direction: column
   margin: 0
-  font-family: 'Open Sans Condensed', sans-serif
+  font-family: $font
 
 .imgshrinkbox
   display: flex
@@ -121,8 +122,12 @@ main
 
   input, select
     background: white
-    text-align: center
     font-size: $medium
+    font-family: $font
+    width: 12em
+    text-align: center
+    text-align-last: center
+    border: 0
     // height: 50%
 
 @media (min-width: 500px)
@@ -143,11 +148,11 @@ button
   margin: 1em 0
   border: 2px solid green
   font-weight: bold
-  font-family: 'Open Sans Condensed', sans-serif
+  font-family: $font
   font-size: $kinda-big
   height: 2em
   background: lightgreen
-  border-radius: 20%
+  border-radius: 5px
 button:hover
   background: lightpink
   border: 2px solid red
@@ -176,7 +181,7 @@ button:hover
 #banner2
   flex: 1
   background: $shade
-  font-size: 3.5vmin
+  font-size: 3.3vmin
   display: flex
   justify-content: center
   align-items: flex-end

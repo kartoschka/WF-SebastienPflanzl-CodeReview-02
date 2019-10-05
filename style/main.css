@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif; }
 
 .imgshrinkbox {
   display: flex;
@@ -93,8 +93,12 @@ main {
     font-size: 1.3rem; }
   #inputform input, #inputform select {
     background: white;
+    font-size: 1.3rem;
+    font-family: "Open Sans Condensed", sans-serif;
+    width: 12em;
     text-align: center;
-    font-size: 1.3rem; }
+    text-align-last: center;
+    border: 0; }
 
 @media (min-width: 500px) {
   #inputform .item {
@@ -110,11 +114,11 @@ button {
   margin: 1em 0;
   border: 2px solid green;
   font-weight: bold;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.5rem;
   height: 2em;
   background: lightgreen;
-  border-radius: 20%; }
+  border-radius: 5px; }
 
 button:hover {
   background: lightpink;
@@ -142,7 +146,7 @@ button:hover {
 #banner2 {
   flex: 1;
   background: #cecece;
-  font-size: 3.5vmin;
+  font-size: 3.3vmin;
   display: flex;
   justify-content: center;
   align-items: flex-end;
