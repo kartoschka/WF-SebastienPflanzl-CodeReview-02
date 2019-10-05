@@ -1,0 +1,188 @@
+/* banner
+   nav
+   block: background img   
+     big title             
+                          |floaty box
+   grey block, advert msg |floaty box
+   white block
+     box: std offer | box: premium offer
+   footer */ 
+
+body
+  // min-height: 100vh
+
+$accent1: #8e1616
+$accent2: #fff3f3
+$shade:   #cecece
+$shade0:  #7b7b7b
+$floaty-alpha: cc //set floaty opacity
+
+$verybig: 5rem
+$big: 2rem
+$kinda-big: 1.5rem
+$medium: 1.3rem
+$small: 1rem
+
+$floatywidth: 88%
+
+body
+  display: flex
+  flex-direction: column
+  margin: 0
+  font-family: 'Open Sans Condensed', sans-serif
+
+#banner1
+  background: $accent2
+  min-height: $verybig
+
+.navlist
+  margin: 0
+  padding: 0
+  background: $accent1
+  li
+    display: inline-block
+    margin-right: $big
+  a
+    text-decoration: none
+    color: white
+
+#vbox
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+main
+  height: 100%
+  position: relative
+
+#title //title contains floaty so floatybase comes directly after title
+  position: absolute
+  top: 0
+  height: 100% //set floaty's containers to <main> height to floaty can float
+  width: 100%
+  left: 0
+  h1
+    color: white
+    font-size: $big
+    text-transform: capitalize
+
+  #floatymcfloatface
+    border: 1px solid $shade0
+    // min-height: 65%
+    position: sticky
+    width: $floatywidth
+    margin: 0 auto
+    left: 0
+    top: 0
+    background: #ffffff#{$floaty-alpha}
+    font-size: $big
+    text-align: center
+
+  p
+    margin: 0.5em 0
+
+  q
+    font-variant: small-caps
+
+  .quoteauth
+    white-space: nowrap
+    font-style: italic
+    &:before
+      content: '—'
+
+#inputform
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  font-size: $small
+
+  .item
+    // margin: 0 5vw
+    flex-basis: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  label
+    display: block
+    text-transform: capitalize
+    white-space: nowrap
+    font-size: $medium
+
+  input, select
+    background: white
+    text-align: center
+    font-size: $medium
+    // height: 50%
+
+@media (min-width: 500px)
+  #inputform
+    .item
+      margin: 0
+      flex-basis: 50%
+
+@media (min-width: 1100px)
+  #inputform
+    .item
+      margin: 0
+      flex-basis: 25%
+
+
+
+button
+  margin: 1em 0
+  border: 2px solid green
+  font-weight: bold
+  font-family: 'Open Sans Condensed', sans-serif
+  font-size: $kinda-big
+  height: 2em
+  background: lightgreen
+  border-radius: 20%
+button:hover
+  background: lightpink
+  border: 2px solid red
+
+
+#calculator-result
+  font-variant: small-caps
+  box-shadow: 0 0 2px 2px $shade0
+  border-top: 2px solid black
+  min-height: 2 * $big
+  color: green
+  font-weight: bold
+  background-color: white
+  display: flex
+  align-items: center
+  justify-content: center
+    
+
+#bigimage
+  display: flex //using flex to get rid of little gap bt #bigimg and #banner2
+  align-items: center
+  margin: 0
+  img
+    width: 100%
+
+#banner2
+  flex: 1
+  background: $shade
+  font-size: 3.5vmin
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  text-transform: capitalize
+  text-align: center
+  font-style: italic
+  // padding-top: $big
+
+#productplans
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  font-size: $medium
+  
+  .item
+    flex: 1
+    margin: 10vh 5vw
+    box-shadow: 0 0 2px 2px $shade0
+    border-top: 2px solid black

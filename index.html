@@ -1,0 +1,108 @@
+<!-- 
+  criteria: github, proper code, proper orga, accurate style ++ media query ++ SASS ++ extra page "team" ++ calculateInsurance() ++ input, process, output
+-->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link href=https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap rel=stylesheet>
+  <link rel=stylesheet type=text/css href=style/main.css>
+  <script src=lib/main.js></script>
+  <meta charset='utf-8'>
+  <title></title>
+</head>
+<body>
+  <!--structure:
+    banner
+    nav
+    block with background img   
+      big title             
+                           |floaty box
+    grey block, advert msg |floaty box
+    white block
+      box: std offer | box: premium offer
+    footer
+  -->
+
+  <div id=vbox>
+    <header>
+      <div id=banner1></div>
+      <nav>
+      </nav>
+    </header>
+
+    <main>
+      <div id=title>
+        <h1>thine trustworthieste horse carriage insurance</h1>
+        <div id=floatymcfloatface>
+          <p><q>Everything the State says is a lie,
+             and everything it has it has stolen.</q><span class=quoteauth>Friedrich Nietzsche</span></p>
+          <div id=inputform>
+            <div class=item>
+              <label>thine name with which to address thee</label>
+              <input type=text   id=input-name>
+            </div>
+            <div class=item>
+              <label>number of summers thou hast experienced</label>
+              <input type=number id=input-age>
+            </div>
+            <div class=item>
+              <label>thine honourable kingdom of residency</label>
+              <select id=input-country>
+                <option value=austria>Austria</option>
+                <option value=hungary>Hungary</option>
+                <option value=greece>Greece</option>
+              </select>
+            </div>
+            <div class=item>
+              <label>number of horses drawing thine carriage</label>
+              <input type=number id=input-horsepower>
+            </div>
+          </div>
+          <button id=calculator-button>Runne magickal abacuss</button>
+          <div id=calculator-result>Beholde thine Personalized Offerte by runnynge the Magickal Abacuss</div>
+        </div>
+      </div>
+      <div id=bigimage><img alt=bla src=img/traffic-332857_1920.jpg></div>
+    </main>
+    <div id=banner2>
+      with great power cometh great responsibility /
+      and an carriage builett massively of massif woodes wieldeth great a power indeed /
+      thereupon thusly we providen thee with thisse valuable service of oures /
+      and thou willst sleepen soundily through the nighte
+    </div>
+  </div>
+  <div id=productplans>
+    <div class=item>
+      <h2>Standard</h2>
+      <ul>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+      </ul>
+    </div>
+    <div class=item>
+      <p>Extra</p>
+      <ul>
+        <li>b</li>
+        <li>b</li>
+        <li>b</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <nav>
+    </nav>
+  </footer>
+  <script>
+    for(navelmt of document.getElementsByTagName('nav')) {
+      console.log("hi")
+      navelmt.appendChild(createNavigationList())
+    }
+
+    document.getElementById('calculator-button')
+      .addEventListener('click', updateInsuranceCalc)
+  </script>
+</body>
+</html>
+
