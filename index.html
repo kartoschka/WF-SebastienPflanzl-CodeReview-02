@@ -46,16 +46,16 @@
               <input type=number id=input-age>
             </div>
             <div class=item>
+              <label>number of horses drawing thine carriage</label>
+              <input type=number id=input-horsepower>
+            </div>
+            <div class=item>
               <label>thine honourable kingdom of residency</label>
               <select id=input-country>
                 <option value=austria>Austria</option>
                 <option value=hungary>Hungary</option>
                 <option value=greece>Greece</option>
               </select>
-            </div>
-            <div class=item>
-              <label>number of horses drawing thine carriage</label>
-              <input type=number id=input-horsepower>
             </div>
           </div>
           <button id=calculator-button>Runne magickal abacuss</button>
@@ -95,10 +95,8 @@
     </nav>
   </footer>
   <script>
-    for(navelmt of document.getElementsByTagName('nav')) {
-      console.log("hi")
-      navelmt.appendChild(createNavigationList())
-    }
+    makeHeader()
+    makeFooter()
 
     document.getElementById('calculator-button')
       .addEventListener('click', updateInsuranceCalc)
