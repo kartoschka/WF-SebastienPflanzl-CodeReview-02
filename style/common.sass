@@ -39,13 +39,26 @@ body
   img
     width: 100%
 
-#banner1
-  padding: $small
-  background: $accent2
-  // min-height: $verybig
+.banner
   display: flex
   justify-content: space-between
   align-items: center
+
+header
+  .banner
+    padding: $small
+    background: $accent2
+    // min-height: $verybig
+
+footer
+  background: black
+  color: white
+
+  .banner
+    justify-content: flex-end
+
+  p
+    text-align: center
 
 .navlist-top
   font-size: $medium

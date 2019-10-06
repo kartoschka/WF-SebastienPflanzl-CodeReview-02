@@ -20,12 +20,22 @@ body {
   .imgshrinkbox img {
     width: 100%; }
 
-#banner1 {
-  padding: 1rem;
-  background: #fff3f3;
+.banner {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+header .banner {
+  padding: 1rem;
+  background: #fff3f3; }
+
+footer {
+  background: black;
+  color: white; }
+  footer .banner {
+    justify-content: flex-end; }
+  footer p {
+    text-align: center; }
 
 .navlist-top, .navlist-bot {
   font-size: 1.3rem;
