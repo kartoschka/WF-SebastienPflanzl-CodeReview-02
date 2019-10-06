@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <link rel=stylesheet type=text/css href=style/main.css>
-  <script src=lib/main.js></script>
+  <link rel=stylesheet type=text/css href=style/common.css>
+  <script src=lib/common.js></script>
   <meta charset='utf-8'>
   <title></title>
 </head>
@@ -21,10 +21,8 @@
     </nav>
   </footer>
   <script>
-    for(navelmt of document.getElementsByTagName('nav')) {
-      console.log("hi")
-      navelmt.appendChild(createNavigationList())
-    }
+    makeHeader()
+    makeFooter()
   </script>
 </body>
 </html>
