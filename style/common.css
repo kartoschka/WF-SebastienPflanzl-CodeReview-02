@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: "Open Sans Condensed", sans-serif; }
@@ -46,17 +47,6 @@ footer {
   background: black;
   font-size: 1rem; }
 
-#banner2 {
-  flex: 1;
-  background: linear-gradient(transparent, #cecece 50%);
-  font-size: 3.3vmin;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  text-transform: capitalize;
-  text-align: center;
-  font-style: italic; }
-
 .nicetiles {
   display: flex;
   justify-content: space-around;
@@ -65,5 +55,13 @@ footer {
   .nicetiles .item {
     flex: 1;
     margin: 10vh 5vw;
+    padding: 2rem;
     box-shadow: 0 2px 2px 2px #7b7b7b;
     border-top: 2px solid black; }
+    .nicetiles .item ul {
+      list-style: none; }
+    .nicetiles .item li:before {
+      content: '✔';
+      color: #90d2d4;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px;
+      margin-right: 1.3rem; }

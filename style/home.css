@@ -112,3 +112,14 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+#banner2 {
+  flex: 1;
+  background: linear-gradient(transparent, #cecece 50%);
+  font-size: 3.3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-transform: capitalize;
+  text-align: center;
+  font-style: italic; }

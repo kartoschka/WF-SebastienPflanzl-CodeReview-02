@@ -55,18 +55,6 @@ footer
   background: black
   font-size: $small
 
-#banner2
-  flex: 1
-  background: linear-gradient(transparent,$shade 50%)
-  font-size: 3.3vmin
-  display: flex
-  justify-content: center
-  align-items: flex-end
-  text-transform: capitalize
-  text-align: center
-  font-style: italic
-  // padding-top: $big
-
 .nicetiles
   display: flex
   justify-content: space-around
@@ -76,5 +64,17 @@ footer
   .item
     flex: 1
     margin: 10vh 5vw
+    padding: $big
     box-shadow: 0 2px 2px 2px $shade0
     border-top: 2px solid black
+
+    ul
+      list-style: none
+
+    li:before
+      content: '✔'
+      color: #90d2d4
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px
+      black
+      margin-right: $medium
+
