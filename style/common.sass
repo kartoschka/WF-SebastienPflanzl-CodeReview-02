@@ -59,22 +59,41 @@ footer
   display: flex
   justify-content: space-around
   flex-wrap: wrap
-  font-size: $medium
+  font-size: $big
   
   .item
     flex: 1
-    margin: 10vh 5vw
+    flex-basis: 35vw
+    margin: 3vh 2vw
     padding: $big
     box-shadow: 0 2px 2px 2px $shade0
     border-top: 2px solid black
 
+    h2
+      white-space: nowrap
+      margin-bottom: 0
+
+    p
+      font-style: italic
+      margin-top: 0
+      font-size: 1.2 * $small
+
     ul
       list-style: none
+      margin-left: 0
+      padding-left: 0
+
+    li
+      padding-left: 1em
+      text-indent: -1em
 
     li:before
+      padding-right: 5px
       content: '✔'
       color: #90d2d4
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px
       black
-      margin-right: $medium
+      // margin-right: $medium
 
+input:focus::placeholder
+  color: transparent

@@ -51,17 +51,33 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  font-size: 1.3rem; }
+  font-size: 2rem; }
   .nicetiles .item {
     flex: 1;
-    margin: 10vh 5vw;
+    flex-basis: 35vw;
+    margin: 3vh 2vw;
     padding: 2rem;
     box-shadow: 0 2px 2px 2px #7b7b7b;
     border-top: 2px solid black; }
+    .nicetiles .item h2 {
+      white-space: nowrap;
+      margin-bottom: 0; }
+    .nicetiles .item p {
+      font-style: italic;
+      margin-top: 0;
+      font-size: 1.2rem; }
     .nicetiles .item ul {
-      list-style: none; }
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+    .nicetiles .item li {
+      padding-left: 1em;
+      text-indent: -1em; }
     .nicetiles .item li:before {
+      padding-right: 5px;
       content: '✔';
       color: #90d2d4;
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px;
-      margin-right: 1.3rem; }
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px; }
+
+input:focus::placeholder {
+  color: transparent; }
